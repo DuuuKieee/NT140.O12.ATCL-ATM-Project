@@ -1,0 +1,49 @@
+.sidebar{
+    background-color: #27A4F2;
+    box-shadow: 1px 0px 4px var(--greyText);
+    width: 20%;
+    height: 100vh;
+    gap: 3rem;
+    overflow: auto;
+    .Menu{
+        .items{
+            padding: 1rem 1.5rem;
+            position: relative;
+            font-size: var(--h2FontSize);
+            
+            list-style: none;
+            &::before{
+                position: absolute;
+                content: '';
+                height: 0%;
+                left:0;
+                width: 5px;
+                bottom: 0;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background: var(--shadow);
+            }
+            &:hover {
+                background-color: navy;
+              }
+            .tagLink{
+                color: white;
+                text-decoration: none;
+                color: var(--titleText);
+                font-weight: bold;
+                transition: 0;
+                font-size: 20px;
+              }
+        
+              &:hover {
+                color: white;
+                transition: 0;
+              }
+        
+              &:hover::before{
+                height: 80%;
+                transition: .3s ease;
+              }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.ProductContent{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    .Product{
+        gap: 1rem;
+        .input{
+            margin: 10px;
+            width: 80%;
+                height: 20px;
+                background: white;
+                border-radius: 5px;
+                gap: 1rem;
+                padding: 5px;
+                border: 2px solid #000;
+                box-shadow: 0 2px 4px var(--orange);
+                justify-self: center;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background: none;
+                }
+        }
+        .Title{
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            padding: 10px;
+        }
+        .Detail{
+            font-size: 15px;
+            color: black;
+            padding: 10px;
+        }
+        .Nuts {
+            padding: 10px 15px;
+            font-size: 15px;
+            border: none;   
+            background-color: #00c3ff;
+            color: #ffffff;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+          
+          .Nuts:hover {
+            background-color: #fffb00;
+            color: #000000;
+          }
+    }
+}
